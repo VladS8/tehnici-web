@@ -1,0 +1,354 @@
+<!DOCTYPE html><!--e1-->
+
+<html lang="ro">
+
+<head>
+    <title> Proiect Website vanzare-cumparare autovehicule </title>
+    <!--e2-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="anunt, masina, pret, motor"><!--e9-->
+    <meta name="description" content="Site vanzare-cumparare autovehicule">
+    <meta name="author" content="Stefan Vlad-Ionut">
+    <!--e3-->
+    <link rel="icon" type="image/png" href="./resurse/ico/favicon_car.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./resurse/ico/favicon_car.png" />
+    <link rel="shortcut icon" href="./resurse/ico/favicon_car.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./resurse/ico/favicon_car.png" />
+    <link rel="manifest" href="./resurse/ico/favicon_car.png" />
+</head>
+
+<body>
+    <header id="top">
+        <h1>AutoSV</h1>
+        <!--e6-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasa</a></li>
+                <li><a href="cont.html">Contul meu</a></li>
+                <li><a href="plasare_anunt">Plaseaza un anunt</a></li>
+                <li>
+                    <a href="#oferte">Oferte</a>
+                    <ul>
+                        <li><a href="#anunturile_zilei">Anunturile zilei</a></li>
+                        <li><a href="#raport_calitate_pret">Cel mai bun raport calitate pret</a></li>
+                    </ul>
+                </li>
+                <li><a href="#alte_pagini">Pagini partenere</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--e5-->
+        <section id="oferte">
+            <h2>Oferte</h2>
+            <section id="anunturile_zilei">
+                <h3>Anunturile zilei:</h3>
+                <!--e7-->
+                <article>
+                    <h4>Volkswagen Golf 7</h4>
+                    <ul>
+                        <li>An fabricatie: 2018</li>
+                        <li>Pret: 50.000 lei</li>
+                        <li>Motor: 1.5 <abbr title="Turbocharged Stratified Injection">TSI</abbr></li><!--e10f-->
+                        <li>Kilometraj: 75.000 km</li>
+                    </ul>
+                    <!--e8-->
+                    <figure>
+                        <picture>
+                            <source srcset="./resurse/masini/masina1.jpg" media="(max-width: 600px)">
+                            <source srcset="./resurse/masini/masina1.jpg" media="(max-width: 1024px)">
+                            <img src="./resurse/masini/masina1.jpg" alt="Golf 7" usemap="#golf7-map">
+                        </picture>
+                        <figcaption><i>Second-hand</i>, <strong>defectiune la placutele de frana</strong></figcaption>
+                    </figure>
+
+                    <map name="golf7-map"><!--b3-->
+                        <area shape="rect" coords="230,80,480,150" href="#motor-details1" alt="Motor"
+                            title="Motor 1.5 TSI - 150 CP">
+                    </map>
+
+                    <details id="motor-details1">
+                        <summary>Detalii extra motor</summary>
+                        <ul>
+                            <li>Capacitate cilindrică 1.498 cm³</li>
+                            <li>Putere maxima 150 CP (110 kW) @ 5.000-6.000 rpm</li>
+                            <li>Cuplu maxim 250 Nm @ 1.500-3.500 rpm</li>
+                            <li>Combustibil Benzina (95/98 octani)</li>
+                            <li>Norma de poluare Euro 6d-TEMP</li>
+                            <li>Consum mixt 5.1-5.4 L/100 km</li>
+                            <li>Emisii CO₂ 116-123 g/km</li>
+                            <li>Sistem de injetie Directa (TSI)</li>
+                            <li>Turbo Single-scroll cu intercooler</li>
+                        </ul>
+                    </details>
+                </article>
+
+                <article>
+                    <h4>BMW Seria 3</h4>
+                    <ul>
+                        <li>An fabricatie: 2022</li>
+                        <li>Pret: 90.000 lei</li>
+                        <li>Motor: 2.0 Diesel</li>
+                        <li>Kilometraj: 10.000 km</li>
+                    </ul>
+                    <figure>
+                        <picture>
+                            <source srcset="./resurse/masini/masina2.jpg" media="(max-width: 600px)">
+                            <source srcset="./resurse/masini/masina2.jpg" media="(max-width: 1024px)">
+                            <img src="./resurse/masini/masina2.jpg" alt="BMW Seria 3" usemap="#bmwseria3-map">
+                        </picture>
+                        <figcaption>Stare impecabila a masinii</figcaption>
+                    </figure>
+
+                    <map name="bmwseria3-map">
+                        <area shape="rect" coords="80,80,250,150" href="#motor-details2" alt="Motor"
+                            title="Motor 2.0 Diesel - 200 CP">
+                    </map>
+
+                    <details id="motor-details2">
+                        <summary>Detalii extra motor</summary>
+                        <ul>
+                            <li> Capacitate cilindrica 1.995 cm³</li>
+                            <li> Putere maximă 190 CP (140 kW) @ 4.000 rpm</li>
+                            <li> Cuplu maxim 400 Nm @ 1.750-2.500 rpm</li>
+                            <li> Combustibil Motorina (Diesel)</li>
+                            <li> Norma de poluare Euro 6d</li>
+                            <li> Consum mixt 4.5-4.9 L/100 km</li>
+                            <li> Emisii CO₂ 119-129 g/km</li>
+                            <li> Sistem de injecție Common Rail</li>
+                            <li> Turbo TwinPower (bi-turbo)</li>
+                        </ul>
+                    </details>
+                </article>
+
+            </section>
+
+            <section id="raport_calitate_pret">
+                <h3>Cel mai bun raport calitate pret:</h3>
+                <blockquote>
+                    <p><b>Conform evaluarilor noastre, aceste vehicule ofera cea mai buna valoare pentru banii
+                            dumneavoastra.</b></p>
+                    <cite>Echipa AutoSV</cite><!--e10i-->
+                </blockquote>
+
+                <article>
+                    <h4>Audi A5</h4>
+                    <ul>
+                        <li>An fabricatie: 2022</li>
+                        <li>Pret: 120.000 lei</li>
+                        <li>Motor: 1.8 <abbr title="Turbo Fuel Stratified Injection">TFSI</abbr></li>
+                        <li>Kilometraj: 500 km</li>
+                    </ul>
+                    <figure>
+                        <picture>
+                            <source srcset="./resurse/masini/masina3.jpg" media="(max-width: 600px)">
+                            <source srcset="./resurse/masini/masina3.jpg" media="(max-width: 1024px)">
+                            <img src="./resurse/masini/masina3.jpg" alt="Audi A5">
+                        </picture>
+                        <figcaption>Masina noua, direct de la producator</figcaption>
+                    </figure>
+                    <!--e11c-->
+                    <div class="container-iframe">
+                        <div class="taburi-iframe">
+                            <a href="https://www.youtube.com/embed/VJ7FVCyvlh8" target="ifr-video">Prezentare</a>
+                            <a href="https://www.youtube.com/embed/MJ9HrVcki-4" target="ifr-video"><i>Test Drive</i></a>
+                        </div>
+                        <iframe name="ifr-video" width="350" height="250"
+                            src="https://www.youtube.com/embed/VJ7FVCyvlh8" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </article>
+                <article>
+                    <h4>Mercedes-Benz, C-Class</h4>
+                    <ul>
+                        <li>An fabricatie: 2019</li>
+                        <li>Pret: 80.000 lei</li>
+                        <li>Motor: 2.2 Diesel</li>
+                        <li>Kilometraj: 80.000 km</li>
+                    </ul>
+                    <figure>
+                        <picture>
+                            <source srcset="./resurse/masini/masina4.jpg" media="(max-width: 600px)">
+                            <source srcset="./resurse/masini/masina4.jpg" media="(max-width: 1024px)">
+                            <img src="./resurse/masini/masina4.jpg" alt="Audi A5">
+                        </picture>
+                        <figcaption><i>Second-hand</i><strong>, evacuare stricata</strong></figcaption><!--e10c, e10b-->
+                    </figure>
+                </article>
+                <article>
+                    <h4>Ford focus</h4>
+                    <ul>
+                        <li>An fabricatie: 2020</li>
+                        <li>Pret: 50.000 lei</li>
+                        <li>Motor: 2.0 Diesel</li>
+                        <li>Kilometraj: 60.000 km</li>
+                    </ul>
+                    <figure>
+                        <picture>
+                            <source srcset="./resurse/masini/masina5.jpg" media="(max-width: 600px)">
+                            <source srcset="./resurse/masini/masina5.jpg" media="(max-width: 1024px)">
+                            <img src="./resurse/masini/masina5.jpg" alt="Audi A5">
+                        </picture>
+                        <figcaption><i>Second-hand</i></figcaption>
+                    </figure>
+                </article>
+
+            </section>
+            <section id="alte_pagini">
+                <h2>Nu ai gasit ce te interesa?</h2>
+                <p>Te invitam pe paginile partenerilor nostrii:</p><!--e11a-->
+                <a href="https://www.autovit.ro/" target="_blank">Autovit</a>
+                <a href="https://www.bestauto.ro/" target="_blank">Bestauto</a>
+            </section>
+
+            <section id="FAQ"><!--e12-->
+                <h2>Intrebari puse frecvent</h2>
+
+                <details>
+                    <summary>Cum pot plasa un anunt?</summary>
+                    <p>Accesati pagina <em>"Plaseaza un anunt"</em>, completati formularul cu datele vehiculului și
+                        incarcati minim 3 fotografii.</p>
+                </details>
+
+                <details>
+                    <summary>Ce garantii oferiti?</summary>
+                    <p>Verificam autenticitatea anunturilor, dar recomandam verificarea fizica a vehiculului înainte de
+                        achizitie.</p>
+                </details>
+
+                <details>
+                    <summary>Ce fac daca masina nu corespunde descrierii?</summary>
+                    <p>
+                        Raportati problema imediat la echipa AutoSV prin formularul de contact.
+                        Vom suspenda anuntul si vom investiga situatia.
+                        Recomandam verificarea fizica inainte de achizitie.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Pot negocia pretul unui vehicul?</summary>
+                    <p>
+                        Da, preturile sunt orientative. Contactati vanzatorul direct pentru negociere.
+                        Nu intervenim in discutii private intre vanzatori si cumparatori.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Cum aflati mai exact daca un vehicul chiar are un raport calitate pret bun?</summary>
+                    <p>Folosim urmatoarea formula matematica:</p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML"><!--b1-->
+                        <mi>V</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <msub>
+                                    <mi>w</mi>
+                                    <mn>1</mn>
+                                </msub>
+                                <mi>A</mi>
+                                <mo>+</mo>
+                                <msub>
+                                    <mi>w</mi>
+                                    <mn>2</mn>
+                                </msub>
+                                <mi>K</mi>
+                                <mo>+</mo>
+                                <msub>
+                                    <mi>w</mi>
+                                    <mn>3</mn>
+                                </msub>
+                                <mi>S</mi>
+                            </mrow>
+                            <mi>P</mi>
+                        </mfrac>
+                    </math>
+
+                    <p>Unde:</p>
+                    <ul>
+                        <li><i>V</i> = Valoarea raportului de calitate </li>
+                        <li><i>A</i> = Varsta vehiculului (ani)</li>
+                        <li><i>K</i> = Kilometraj (mii km)</li>
+                        <li><i>S</i> = Stare tehnica (nota 1-10)</li>
+                        <li><i>P</i> = Pret (mii lei)</li>
+                        <li><i>w<sub>1</sub></i> = 0,3 (pondere varsta)</li>
+                        <li><i>w<sub>2</sub></i> = 0,3 (pondere kilometraj)</li>
+                        <li><i>w<sub>3</sub></i> = 0,4 (pondere stare tehnica)</li>
+                    </ul>
+
+                    <p>
+                        <i>Lucram din greu la imbunatatirea serviciilor noastre, astfel factorul de calitatea ar putea
+                            suporta schimbari majore.</i><br>
+                        <b>Schimbarile vor fi anuntate conform termenilor si conditiilor!</b>
+                    </p>
+                </details>
+            </section>
+
+            <section id="ghid">
+                <h2>Ghid de siguranta</h2>
+
+                <details>
+                    <summary>Cum evit înselaciunile?</summary>
+                    <p>Verificati VIN-ul vehiculului.<br>
+                        Cereti istoricul service.<br>
+                        Nu platiti în avans fara contract.</p>
+                </details>
+
+                <details>
+                    <summary>Ce documente sunt necesare?</summary>
+                    <p>Actele obligatorii: carte de identitate, certificat de inmatriculare si contract
+                        de vanzare-cumparare.</p>
+                </details>
+
+                <details>
+                    <summary>Cum verific istoricul unei masini?</summary>
+                    <p>
+                        Utilizati servicii de verificare VIN (ex: CarVertical) pentru a vedea accidentele, km reali
+                        siistoricul de proprietari.
+                        Cereti vanzatorului sa va ofere raportul complet.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Ghid complet de achizitii <i>Second-hand</i></summary>
+                    <p>
+                        <!--e11d-->
+                        <a href="./resurse/download/ghid_achizitie.pdf" download="ghid_achizitie"
+                            target="_blank">Descarca ghidul complet.</a>
+                    </p>
+                </details>
+
+            </section>
+
+        </section>
+
+    </main>
+    <footer>
+        <!--b4-->
+        <br><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.884114398441!2d26.097011775701!3d44.435539301482414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff472f47f047%3A0x493984726f0235f9!2sFacultatea%20de%20Matematic%C4%83%20%C8%99i%20Informatic%C4%83!5e0!3m2!1sro!2sro!4v1741589822886!5m2!1sro!2sro"
+            width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+        <!--e13-->
+        <a href="tel:+40760123456" target="_blank">Telefon</a> <br>
+        <a href="mailto:contact@autosv.ro" target="_blank">e-Mail</a> <br>
+        <a href="https://wa.me/0760123456" target="_blank">WhatsApp</a><br>
+
+        <details>
+            <summary>Termeni si conditii</summary>
+            <embed src="./resurse/download/tsc.pdf" type="application/pdf" width="600" height="400"><br><!--b2-->
+        </details>
+
+        <a href="#top">Inapoi la inceputul paginii</a><!--e11b-->
+        <br><br><br><small><!--e14-->
+            &copy; 2025 Toate drepturile rezervate.
+            Pagina a fost creata la data de <time datetime="2024-03-07">7 martie 2024</time>.
+        </small>
+
+
+    </footer>
+</body>
+
+</html>
