@@ -17,28 +17,47 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./resurse/ico/favicon_car.png" />
     <link rel="manifest" href="./resurse/ico/favicon_car.png" />
     <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/meniu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 </head>
 
 <body>
     <header id="top">
-        <div class="header">
-            <h1 class = "logo">Auto<span>SV</span></h1>
-            <nav>
-                <ul class="nav_links">
-                    <li>
-                        <a href="#oferte">Oferte</a>
-                        <ul class="nav_oferte">
-                            <li><a href="#anunturile_zilei">Anunturile zilei</a></li>
-                            <li><a href="#raport_calitate_pret">Cel mai bun raport calitate pret</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="cont.html">Contul meu</a></li>
-                    <li><a href="index.html">Acasa</a></li>
-                    <li><a href="plasare_anunt" class="plaseaza_anunt">Plaseaza un anunt</a></li>
-                </ul>                       
-            </nav>
-        </div>
-    </header>
+  <div class="header">
+    <a href="index.html"><h1 class="logo">Auto<span>SV</span></h1></a>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html" class="home-link">
+            <span class="full-text">Acasă</span>
+            <i class="fa-solid fa-house icon-replacement"></i>
+          </a>
+        </li>
+        <li><a href="anunturile-speciale">Anunțurile speciale</a>
+          <ul>
+            <li><a href="#zona2">Cele mai vandute masini</a></li>
+            <li><a href="#zona8">Anunțul zilei</a></li>
+          </ul>
+        </li>
+        <li><a href="#contul-meu">Contul meu</a>
+          <ul>
+            <li><a href="#login">Logheaza-te</a></li>
+            <li><a href="#register">Inregistreaza-te</a></li>
+          </ul>
+        </li>
+        <li><a href="#plaseaza-anunt">Plasează un anunț</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
     <main>
         <div class="container">
             <div class="zona1">
@@ -52,14 +71,13 @@
                 </div>
             </div>
 
-            <div class="zona2">
+            <div class="zona2" id="zona2">
                 <div class="table-title-container">
-                    <p class="table-title">Cele mai vandute masini</p>
+                    <p class="table-title"><i class="fas fa-star fa-1x"></i>Cele mai vandute masini<i class="fas fa-star fa-1x"></i></p>
                 </div>
                 <div class="table">
                     <table>
-                        <caption class="table-caption">*Toate prețurile includ TVA.
-                                Oferta Ford Focus valabilă până pe 30.11.2023*
+                        <caption class="table-caption">*Toate prețurile includ TVA*
                         </caption>
                         <thead class="table-head">
                             <tr>
@@ -109,9 +127,10 @@
 
 
             <div class="zona3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad mi officia deserunt mollit anim id est laborum.
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad mi officia deserunt mollit anim id est laborum.
                 </p>
             </div>
             <div class="zona4">
@@ -139,9 +158,9 @@
                 Ut enim ad mi officia deserunt mollit anim id est laborum.</p>
             </div>
 
-            <div class="zona8">
+            <div class="zona8" id="zona8">
                 <div class="text-anunt-container">
-                    <div class="titlu-anunt">Anunțul zilei</div>
+                    <div class="titlu-anunt"><i class="fas fa-key fa-beat-fade fa-1x"></i>Anunțul zilei<i class="fas fa-key fa-beat-fade fa-1x"></i></div>
                     <div class="info-anunt">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

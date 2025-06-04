@@ -1,9 +1,3 @@
-/* 1. schema-cromatica - gata*/
-/* 2. layout - trebuie tranzitia la text ecran mic si mediu*/
-/* 3. design rudimentar - e*/
-
-
-
 *{
   margin: 0;
   padding: 0;
@@ -19,6 +13,7 @@
   --culoare-secundara-3: #F4F4F4; 
   --culoare-secundara-4: #121212;
   --culoare-secundara-5: #BDBDBD; 
+  --culoare-secundara-6: #FFFFFF;
   --spatiere-pagina: 100px;
   --spatiere-pagina-medie: 80px;
   --spatiere-pagina-mica: 50px;
@@ -39,52 +34,15 @@ body {
   --border-color: var(--culoare-secundara-5);   
   --highlight-color: var(--culoare-secundara-1); 
   --success-color: var(--culoare-secundara-2);
+  --text-color2: var(--culoare-secundara-6);
+  font-family: 'Poppins', sans-serif;
 }
 
 .search-title, .search-subtitle, .nav_links li a {
   padding: var(--text-padding);
 }
 
-.header {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-  background: var(--background-color);
-  border-bottom: 2px solid var(--border-color);
-  box-shadow: 0 2px 10px var(--border-color);
 
-}
-
-.logo{
-  color: var(--text-color);
-  padding: 0px 30px;
-  font-family:'Trebuchet MS';
-  font-size: 32px;
-  font-weight: 200;
-}
-
-.logo span {
-  font-weight: 1000;
-}
-
-.nav_links{
-  float: right;
-  height: 100%;
-}
-
-.nav_links li{
-  height: 100%;
-  display: table;
-  float: left;
-  padding: 0px 20px;
-}
-
-.nav_links li a{
-  display: table-cell;
-  vertical-align: middle;
-}
 
 footer {
   width: 100%;
@@ -363,7 +321,6 @@ iframe {
   opacity: 1;
 }
 
-/*bonus2*/
 .math-red-bold {
   color: red;
   font-weight: bold;
@@ -380,9 +337,6 @@ iframe {
 
 
 
-
- 
-
 @media (max-width: 1024px){
   .container {
     grid-template-columns: 1fr 1fr 1fr;
@@ -391,9 +345,6 @@ iframe {
       "zona3 zona2 zona4"
       "zona5 zona6 zona7"
       "zona8 zona8 zona8";
-  }
-
-  .container{
     margin-left: var(--spatiere-pagina-medie);
     margin-right: var(--spatiere-pagina-medie);
     gap: var(--grid-gap-medium);
@@ -441,10 +392,8 @@ iframe {
   .table-caption {
     font-size: 0.9em;
   }
+
 }
-
-
-
 
 
 @media (max-width: 768px) {
@@ -459,15 +408,16 @@ iframe {
       "zona6"
       "zona7"
       "zona8";
+      margin-left: var(--spatiere-pagina-mica);
+      margin-right: var(--spatiere-pagina-mica);
+      gap: var(--grid-gap-small);
   }
 
-  .container{
-    margin-left: var(--spatiere-pagina-mica);
-    margin-right: var(--spatiere-pagina-mica);
-    gap: var(--grid-gap-small);
+  .container {
+    padding-top: 60px;
   }
 
-   .zona1 {
+  .zona1 {
     flex-direction: column;
     height: auto;
     align-items: center;
@@ -523,55 +473,3 @@ iframe {
     font-size: 0.85em;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---- link sus 
-
-#link-top{
-  position:fixed;
-  bottom:0.3em;
-  opacity:0.5;
-  left:0.3em;
-  width:3rem;
-  box-sizing: border-box;
-  height:3rem;
-  line-height:3rem;
-  text-align:center;
-  border:5px solid grey;
-	border-top-color:red;
-  border-radius:50%;
-  background: rgb(220,220,220);
-}
-#link-top:hover{
-  opacity:1;
-}
-#triunghi{
-  height:0px;
-  width:0;
-  display:inline-block;
-  border-bottom:1.5rem solid grey;
-  border-left:1rem solid transparent;
-  border-right:1rem solid transparent;
-  vertical-align: top;
-  transform: translateY(30%);
-}
-
-h1{
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-/* ---- asta in html:
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> ------*/
