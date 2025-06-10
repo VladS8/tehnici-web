@@ -1,0 +1,19 @@
+WEBVTT
+
+STYLE
+::cue {
+  background-color: #F4F4F4;
+  color: #121212;    
+}
+
+00:00:01.000 --> 00:00:04.000
+Căutați o mașină second-hand sau una folosită in stare <u>excelentă</u>?
+
+00:00:04.100 --> 00:00:09.000
+Ați ajuns în locul <u>potrivit</u>. Avem o gamă largă de mărci și modele din care să alegeți.
+
+00:00:09.000 --> 00:00:13.000
+<u>Finanțare?</u> Putem colabora cu banca dvs. sau vă putem acorda un împrumut indiferent de situație.
+
+00:00:13.600 --> 00:00:16.000 position:30%,start align:end line:30%
+<u><a href="anunturile-speciale">Click aici</a></u> pentru a găsi acum mașina visurilor.

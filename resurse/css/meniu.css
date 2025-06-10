@@ -1,0 +1,227 @@
+/* SCSS for menu only */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px var(--text-padding);
+  height: 60px;
+  background-color: var(--primary-color);
+  position: relative;
+  z-index: 10;
+  /* Media queries */
+}
+.header .menu-toggle {
+  display: none;
+}
+.header .logo {
+  font-size: 38px;
+  color: white;
+  margin-left: 10px;
+}
+.header .logo span {
+  color: var(--highlight-color);
+}
+.header .hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+.header .hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-right: 10px;
+}
+.header .home-link .icon-replacement {
+  display: none;
+}
+.header .nav-links li {
+  position: relative;
+}
+.header .nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+.header .nav-links li a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.4s ease;
+  border-radius: 8px;
+  z-index: -1;
+}
+.header .nav-links li a:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+.header .nav-links li ul {
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  transform: scale(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+  min-width: 200px;
+  z-index: 2;
+}
+.header .nav-links li ul li a {
+  padding: 10px 15px;
+  display: block;
+  color: white;
+  background-color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.header .nav-links li ul li a:hover {
+  background-color: #555;
+  color: var(--highlight-color);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+.header .nav-links li:hover ul {
+  transform: scale(1);
+}
+@media (max-width: 1024px) {
+  .header .nav-links li a {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+  .header .home-link .full-text {
+    display: none;
+  }
+  .header .home-link .icon-replacement {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: white;
+  }
+  .header .nav-links {
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    position: fixed;
+  }
+  .header .hamburger {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    z-index: 1100;
+    margin-right: 1000px;
+  }
+  .header .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 20px;
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    clip-path: polygon(0% 8.5%, 0% 8.5%, 0% 50%, 0% 100%, 0% 100%);
+    transition: clip-path 1.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  .header .nav-links::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+  }
+  .header .nav-links li {
+    width: 100%;
+  }
+  .header .nav-links li a {
+    padding: 15px 25px;
+    display: block;
+    font-size: 1.1em;
+    text-align: center;
+  }
+  .header .nav-links li ul {
+    position: static;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+    clip-path: none;
+    transform: none !important;
+    box-shadow: none;
+  }
+  .header .nav-links li ul li a:hover {
+    background-color: #555;
+  }
+  .header .nav-links li:hover ul, .header .nav-links li:focus-within ul {
+    display: block;
+  }
+  .header #menu-toggle:checked ~ nav .nav-links {
+    clip-path: polygon(0% 8.5%, 100% 8.5%, 200% 50%, 100% 100%, 0% 100%);
+  }
+  .header #menu-toggle:checked ~ nav .nav-links::before {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .header .home-link .full-text {
+    display: none;
+  }
+  .header .home-link .icon-replacement {
+    display: inline-block;
+    font-size: 1.2rem;
+  }
+  .header #menu-toggle:checked + .hamburger span:nth-child(1) {
+    animation: animateBar1 0.1s 0.1s forwards;
+  }
+  .header #menu-toggle:checked + .hamburger span:nth-child(2) {
+    animation: animateBar2 0.1s forwards;
+  }
+  .header #menu-toggle:checked + .hamburger span:nth-child(3) {
+    animation: animateBar3 0.1s 0.15s forwards;
+  }
+  @keyframes animateBar1 {
+    to {
+      transform: rotate(45deg) translate(5px, 5px);
+      background-color: red;
+    }
+  }
+  @keyframes animateBar2 {
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes animateBar3 {
+    to {
+      transform: rotate(-45deg) translate(7px, -6px);
+      background-color: red;
+    }
+  }
+}
+
+/*# sourceMappingURL=meniu.css.map */
