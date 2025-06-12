@@ -1,0 +1,166 @@
+    <!DOCTYPE html><!--e1-->
+
+    <html lang="ro">
+
+    <head>
+        <title> Proiect Website vanzare-cumparare autovehicule </title>
+        <!--e2-->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="anunt, masina, pret, motor"><!--e9-->
+
+        <%- include("../fragmente/head.ejs")  %> <!--HEAD-->
+
+    </head>
+
+    <body>
+
+        <%- include("../fragmente/header.ejs")  %>  <!--HEADER-->
+
+        <main>
+            <div class="container">
+                <div class="zona1">
+                    <div class="search">
+                            <h1 class="search-title">Cauți un vehicul?</h1>
+                            <p class="search-subtitle">Site-ul tau sigur de <br> vanzare-cumparare autovehicul</p>
+                            <button class="search-bar">Vezi catalogul nostru</button>
+                            <p><b>Ip: </b> <%- locals.ip  %></p>
+                    </div>
+                    <div class="banner">
+                        <img src="./resurse/banner.jpg" alt="Banner" class="banner-img">
+                    </div>
+                </div>
+
+                <div class="zona2" id="zona2">
+                    <div class="table-title-container">
+                        <p class="table-title"><i class="fas fa-star fa-1x"></i>Cele mai vandute masini<i class="fas fa-star fa-1x"></i></p>
+                    </div>
+                    <div class="table">
+                        <table>
+                            <caption class="table-caption">*Toate prețurile includ TVA*
+                            </caption>
+                            <thead class="table-head">
+                                <tr>
+                                    <th>Model</th>
+                                    <th>An</th>
+                                    <th>Preț (€)</th>
+                                    <th>Caracteristici</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-body">
+                                <tr>
+                                    <td>Volkswagen Golf</td>
+                                    <td>2020</td>
+                                    <td>18.500</td>
+                                    <td rowspan="2">Cutie automată, Climate control</td>
+                                </tr>
+                                <tr>
+                                    <td>Ford Focus (Ofertă)</td>
+                                    <td>2019</td>
+                                    <td>14.900</td>
+                                </tr>
+                                <tr>
+                                    <td>BMW Serie 3</td>
+                                    <td>2021</td>
+                                    <td>32.000</td>
+                                    <td>Navigație premium, Piele naturală</td>
+                                </tr>
+                                <tr>
+                                    <td>Dacia Sandero</td>
+                                    <td>2022</td>
+                                    <td>11.300</td>
+                                    <td>Dotare basic, Garantie extinsă</td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="table-foot">
+                                <tr>
+                                    <td colspan="4">
+                                        Toate vehiculele au inspecția tehnică validă
+                                    </td> 
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+
+
+
+                <div class="zona3">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad mi officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="zona4">
+                    
+                </div>
+
+                <div class="zona5">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad mi officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="zona6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad mi officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+
+                <div class="zona7">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad mi officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="zona8" id="zona8">
+                    <div class="text-anunt-container">
+                        <div class="titlu-anunt"><i class="fas fa-key fa-beat-fade fa-1x"></i>Anunțul zilei<i class="fas fa-key fa-beat-fade fa-1x"></i></div>
+                        <div class="info-anunt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad mi officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                    <div class="container-video">
+                        <div class="container-iframe">
+                            <iframe name="ifr-video" src="https://www.youtube.com/embed/VJ7FVCyvlh8" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="taburi-iframe">
+                            <a href="https://www.youtube.com/embed/VJ7FVCyvlh8" target="ifr-video">Prezentare</a>
+                            <a href="https://www.youtube.com/embed/MJ9HrVcki-4" target="ifr-video"><i>Test Drive</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <%- include("../fragmente/galerie_statica.ejs")  %>
+
+
+
+            <div class="back-to-top" >
+                <a href="index">
+                    <span>
+                        &#129081;
+                    </span>
+                </a>
+            </div>
+
+        </main>
+
+        <%- include("../fragmente/video.ejs")  %>
+
+        <%- include("../fragmente/footer.ejs")  %>  <!--FOOTER-->
+
+    </body>
+
+
+
+    </html>

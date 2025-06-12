@@ -1,0 +1,41 @@
+<div class="grid-galerie">
+    <h2>Galerie statica</h2>
+    <div class="galerie_statica">
+        <%
+        const d = new Date();
+        const ora_curenta = d.getHours();
+
+        for (let imag of locals.imagini) { 
+            let afisareImagine = false;
+
+            if (imag.intervale_ore) {
+                for (let interval of imag.intervale_ore) {
+                    const start = interval[0];
+                    let end = interval[1];
+                    
+                    if (end > 24) end = 24;
+                    
+                    if (ora_curenta >= start && ora_curenta <= end - 1) {
+                        afisareImagine = true;
+                        break;
+                    }
+                }
+            }
+
+            if (afisareImagine) {
+        %>
+            <figure>
+                <picture>
+                    <source srcset="<%- imag.cale_relativa_mediu %>" media="screen and (max-width:1024px)" />
+                    <img src="<%- imag.cale_relativa %>" style="background-color: transparent;">
+                </picture>
+                <figcaption>
+                    <%= imag.descriere_imag ? imag.descriere_imag : imag.nume_imag %>
+                </figcaption>
+            </figure>
+        <%
+            }
+        }
+        %>
+    </div>
+</div>

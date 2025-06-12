@@ -1,0 +1,19 @@
+WEBVTT
+
+STYLE
+::cue {
+  background-color: #F4F4F4;
+  color: #121212;    
+}
+
+00:00:01.000 --> 00:00:04.000
+Are you looking for a <u>great</u> used or pre-owned car?
+
+00:00:04.100 --> 00:00:09.000
+You've found the right place. We have a <u>wide variety</u> of makes and models to choose from.
+
+00:00:09.000 --> 00:00:13.000
+<u>Financing?</u> We can work with your bank or we can approve anyone for a loan.
+
+00:00:13.600 --> 00:00:16.000 position:30%,start align:end line:30%
+<u>Click here</u> to find your dream car now.
